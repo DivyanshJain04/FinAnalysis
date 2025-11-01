@@ -17,7 +17,7 @@ def generate_pdf(results, pie_chart_buffer=None):
     
     # Add title
     title_style = styles['Heading1']
-    elements.append(Paragraph("FinMate Financial Report", title_style))
+    elements.append(Paragraph("FinAnalysis Financial Report", title_style))
     elements.append(Spacer(1, 20))
     
     # Add financial analysis section

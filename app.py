@@ -5,10 +5,10 @@ from utils.calculator import calculate_finance
 from utils.report_generator import generate_pdf
 from utils.investment_advisor import suggest_investments
 
-st.set_page_config(page_title="FinMate", page_icon=":moneybag:", layout="centered")
+st.set_page_config(page_title="FinAnalysis", page_icon=":moneybag:", layout="centered")
 
 st.image('assets/finmate webp.jpg', width=150)
-st.title("FinMate - Your Personal Finance & Investment Buddy")
+st.title("FinAnalysis - Your Personal Finance & Investment Buddy")
 
 # --- Collecting User Inputs ---
 st.header("Enter Your Financial Details")
@@ -96,8 +96,8 @@ if st.button("Calculate Report"):
     st.download_button(
         label="📥 Download PDF Report",
         data=pdf_buffer,
-        file_name="FinMate_Report.pdf",
+        file_name="FinAnalysis_Report.pdf",
         mime="application/pdf"
     )
 
-st.caption("FinMate Beta v1.0")
+st.caption("FinAnalysis Beta v1.0")
